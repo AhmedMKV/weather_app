@@ -9,15 +9,10 @@ class SearchViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
-            colors: [
-              Colors.yellow,
-              Colors.blue,
-            ],
-          )),
+        color: Color(0xFF1A237E),
+      ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Center(
@@ -31,12 +26,12 @@ class SearchViewBody extends StatelessWidget {
                 Text(
                   'Enter the city',
                   style: TextStyle(
-                      color: Colors.blue, fontFamily: 'Pacifico', fontSize: 25),
+                      color: Colors.blue,  fontSize: 25),
                 ),
                 Text(
                   'you wish to get its weather',
                   style: TextStyle(
-                      color: Colors.blue, fontFamily: 'Pacifico', fontSize: 25),
+                      color: Colors.blue, fontSize: 25),
                 ),
                 SizedBox(
                   height: 200,
@@ -53,17 +48,17 @@ class SearchViewBody extends StatelessWidget {
                       contentPadding:
                       EdgeInsets.symmetric(horizontal: 16, vertical: 32),
                       label: Text('Search'),
-                      labelStyle: TextStyle(color: Color(0xFF0D47A1),),
+                      labelStyle: TextStyle(color:Colors.blue,),
                       hintText: 'Enter the city name',
-                      hintStyle: TextStyle(color: Color(0xFF0D47A1),),
+                      hintStyle: TextStyle(color: Colors.blue,),
                       prefixIcon: Icon(Icons.search),
-                      prefixIconColor: Color(0xFF0D47A1),
+                      prefixIconColor: Colors.blue,
                       enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(16),
-                          borderSide: BorderSide(color: Color(0xFF0D47A1),)),
+                          borderSide: BorderSide(color:Colors.blue,)),
                       focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(16),
-                          borderSide: BorderSide(color: Color(0xFF0D47A1),))),
+                          borderSide: BorderSide(color: Colors.blue,))),
                 ),
               ],
             ),

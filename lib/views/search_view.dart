@@ -8,12 +8,13 @@ class SearchView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color(0xFF0D47A1),
         appBar: AppBar(
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.transparent,
           centerTitle: true,
           title: Text(
             'Search for a city',
-            style: TextStyle(color: Color(0xFF0D47A1), fontFamily: 'Pacifico'),
+            style: TextStyle(color: Colors.blue,),
           ),
         ),
         body: SearchViewBody());

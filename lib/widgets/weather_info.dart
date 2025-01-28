@@ -17,7 +17,7 @@ class WeatherInfo extends StatelessWidget {
             Text(
               weatherModel.cityName,
               style: TextStyle(
-                  fontSize: 66, color: kTextColor, fontFamily: 'Pacifico'),
+                  fontSize: 66, color: kTextColor,),
             ),
             SizedBox(
               height: 20,
@@ -38,13 +38,13 @@ class WeatherInfo extends StatelessWidget {
                 Text(
                   '${weatherModel.temp}',
                   style: TextStyle(
-                      color: kTextColor, fontSize: 60, fontFamily: 'Pacifico'),
+                      color: kTextColor, fontSize: 60),
                 ),
                 Spacer(),
                 Text(
                   weatherModel.weatherCondition,
                   style: TextStyle(
-                      color: kTextColor, fontSize: 30, fontFamily: 'Pacifico'),
+                      color: kTextColor, fontSize: 30),
                 ),
               ],
             ),
@@ -54,7 +54,7 @@ class WeatherInfo extends StatelessWidget {
             Text(
               'Max Temp : ${weatherModel.maxTemp}',
               style: TextStyle(
-                  color: kTextColor, fontSize: 35, fontFamily: 'Pacifico'),
+                  color: kTextColor, fontSize: 35),
             ),
             SizedBox(
               height: 20,
@@ -62,7 +62,7 @@ class WeatherInfo extends StatelessWidget {
             Text(
               'Min Temp : ${weatherModel.minTemp}',
               style: TextStyle(
-                  color: kTextColor, fontSize: 35, fontFamily: 'Pacifico'),
+                  color: kTextColor, fontSize: 35),
             ),
             SizedBox(
               height: 20,
@@ -70,7 +70,7 @@ class WeatherInfo extends StatelessWidget {
             Text(
               'last update at ${weatherModel.date.hour}:${weatherModel.date.minute}',
               style: TextStyle(
-                  color: kTextColor, fontSize: 28, fontFamily: 'Pacifico'),
+                  color: kTextColor, fontSize: 28),
             )
           ],
         ),

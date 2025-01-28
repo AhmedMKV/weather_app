@@ -18,12 +18,13 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF0D47A1),
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.transparent,
         centerTitle: true,
         title: Text(
           'Weather app',
-          style: TextStyle(color: Color(0xFF0D47A1), fontFamily: 'Pacifico'),
+          style: TextStyle(color: Colors.blue),
         ),
         actions: [
           IconButton(
@@ -39,21 +40,19 @@ class _HomeViewState extends State<HomeView> {
             },
             icon: Icon(
               Icons.search,
-              color: Color(0xFF0D47A1),
+              color: Colors.blue,
+
             ),
           )
         ],
       ),
-      body: Container(
+      body:
+
+      Container(
+        margin: EdgeInsets.all(10),
         decoration: BoxDecoration(
-            gradient: LinearGradient(
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
-          colors: [
-            Colors.yellow,
-            Colors.blue,
-          ],
-        )),
+          color: Color(0xFF1A237E),
+        ),
         child: BlocBuilder<GetWeatherCubit, WeatherState>(
           builder: (context, state) {
             if (state is WeatherInitialState) {
